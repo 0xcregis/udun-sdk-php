@@ -19,21 +19,44 @@ if ($call_back_data['sign'] == $sign) {
     if ($body->tradeType == 1) {
 
         //$body->status 0待审核 1审核成功 2审核驳回 3交易成功 4交易失败
-        if($body->status == 1){
-            //业务处理完成返回 服务器不再回调
-            
-            return "success";
+        if($body->status == 0){
+            //业务处理
         }
+        else if($body->status == 1){
+            //业务处理
+        }
+        else if($body->status == 2){
+            //业务处理 
+        }
+        else if($body->status == 3){
+            //业务处理 
+        }
+        else if($body->status == 4){
+            //业务处理
+        }
+        //无论业务方处理成功与否（success,failed），回调都认为成功
+        return "success";
 
     } elseif ($body->tradeType == 2) {
         
         //$body->status 0待审核 1审核成功 2审核驳回 3交易成功 4交易失败
-        if($body->status == 1){
-            //业务处理完成返回 服务器不再回调
-
-            return "success";
+        if($body->status == 0){
+            //业务处理
         }
-
+        else if($body->status == 1){
+            //业务处理
+        }
+        else if($body->status == 2){
+            //业务处理 
+        }
+        else if($body->status == 3){
+            //业务处理 
+        }
+        else if($body->status == 4){
+            //业务处理
+        }
+        //无论业务方处理成功与否（success,failed），回调都认为成功
+        return "success";
     }
 
 } else {
