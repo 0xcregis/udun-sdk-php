@@ -1,0 +1,24 @@
+{
+    "name": "udun/udun-wallet-sdk",
+    "description": "udun-wallet-sdk",
+    "version": "1.0.0",
+    "type": "1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "udun wallet"
+        }
+    ],
+    "require": {
+        "hanson/foundation-sdk": "^5.0",
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Udun\\Dispatch\\": "src/"
+        }
+    }
+}
