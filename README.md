@@ -91,7 +91,7 @@ udun-sdk-php
 	    //交易回调
 		public function callback()
 	    {
-	    	$result =  $this->callback();
+	    	$result =  $this->udunDispatch->callback();
 	        return json($result);
 	    } 
 
